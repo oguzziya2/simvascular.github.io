@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>SimVascular Docs</title>
+
+	<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/shop-item.css" rel="stylesheet" type="text/css" />
+
+	<link href="css/codestyle.css" rel="stylesheet" type="text/css" />
+
+	<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="https://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+
+	<link rel="shortcut icon" href="img/favicon.ico">
+
+	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+	<!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+	<![endif]-->
+    </head>
+    <body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+		    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+			<i class="fa fa-bars" id="barIcon"></i>
+		    </button>
+                    <a class="navbar-brand" id="brandName" href="index.html">
+			<img src="img/svlogo/svLogoSmallText.png" alt="...">
+                    </a>
+		</div>
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                    <ul class="nav navbar-nav">
+
+			<!-- USER GUIDES -->
+			<li>
+			    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+				<b><span class="fa fa-user"></span> User Guides</b>
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsInstallation.html"><b><span class="fa fa-sign-in fa-rotate-90"></span> Installation</b></a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsQuickGuide.html"><b><span class="icon ion-ios7-bolt"></span> Quick Guide</b></a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsModelGuide.html"><b><span class="icon ion-settings"></span> Modeling</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsMeshing.html"><b><span class="icon ion-ios7-keypad"></span> Meshing</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsFlowSolver.html"><b><span class="icon ion-play"></span> Simulation</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docssvFSI.html"><b><span class="icon ion-plus-round"></span> svFSI</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docs1DSimulation.html"><b><span class="icon ion-plus-round"></span> 1D Simulation</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsGenBC.html"><b><span class="icon ion-refresh"></span> GenBC</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsPythonInterface.html"><b><span class="icon ion-refresh"></span> Python Interface</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsPurkinje.html"><b><span class="icon ion-refresh"></span> Purkinje Network</b></a></li>
+			    </ul>
+			</li>
+
+			<!-- CLINCAL CASES -->
+			<li>
+			    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+				<b><i class="fa fa-stethoscope"></i> Clinical Cases</b>
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="clinicalCase3.html"><b><span class="fa fa-user-md"></span> Coronary Normal</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="clinicalCase1.html"><b><span class="fa fa-user-md"></span> Aortofemoral Normal - 1</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="clinicalCase2.html"><b><span class="fa fa-user-md"></span> Aortofemoral Normal - 2</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="clinicalCase4.html"><b><span class="fa fa-user-md"></span> Healthy Pulmonary</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://simtk.org/projects/sv_tests"><b><span class="fa fa-user-md"></span> All demo projects</b></a></li>
+			    </ul>
+			</li>
+
+			<!-- DEVELOPER GUIDES -->
+			<li>
+			    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+				<b><span class="fa fa-caret-square-o-right"></span> Developer Guides</b>
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="docsCompile.html"><b><span class="fa fa-file-text-o"></span> Compile Source Code</b></a></li>
+			    </ul>
+			</li>
+
+			<!-- svCOMMUNITY -->
+			<li>
+			    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+				<b><i class="fa fa-users"></i> svCommunity</b>
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://simtk.org/forums/viewforum.php?f=188"><b><span class="fa fa-users"></span> Public Forum</b></a></li>
+				<li role="presentation" class="divider"></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://simtk.org/mailman/listinfo/simvascular-news"><b><span class="fa fa-sign-in"></span> Join News Mailing List</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://simtk.org/pipermail/simvascular-news/"><b><span class="fa fa-pencil-square-o"></span> News Mailing List Archive</b></a></li>
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="https://github.com/SimVascular/SimVascular/issues"><b><span class="fa fa-bug"></span> Report bugs and request features</b></a></li>
+			    </ul>
+			</li>
+
+			<!-- REFERENCES -->
+			<li>
+			    <a href="docsRefs.html" id="dropdownMenu1" >
+				<b><span class="icon ion-document-text"></span>References</b>
+			    </a>
+			</li>
+
+			<!-- Archives -->
+			<li>
+			    <a href="#" id="dropdownMenu1" data-toggle="dropdown">
+				<b> Archives</b>
+			    </a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+				<li role="presentation"><a role="menuitem" tabindex="-1" href="archiveQuickGuideSV2.html"><b>SimVascular 2.0</b></a></li>
+			    </ul>
+			</li>
+
+			<!-- <li><a href="docsQuickGuide.html" id="btnQuickGuide"><b><span class="icon ion-ios7-bolt"></span> Quick Guide</b></a></li>
+			     <li><a href="docsModelGuide.html" id="btnModelGuide"><b><span class="icon ion-settings"></span> Modeling</b></a></li>
+
+			     <li><a href="docsMeshing.html" id="btnMeshing"><b><span class="icon ion-ios7-keypad"></span> Meshing</b></a></li>
+			     <li><a href="docsPresolver.html" id="btnPresolver"><b><span class="icon ion-log-in"></span> svPre</b></a></li>
+			     <li><a href="docsFlowSolver.html" id="btnFlowSolver"><b><span class="icon ion-play"></span> svSolver</b></a></li>
+			     <li><a href="docsRefs.html" id="btnRefs"><b><span class="icon ion-document-text"></span> References</b></a></li>
+			     <li><a href="clinicalCase1.html" id="btnRefs"><b>Case Studies</b></a></li> -->
+                    </ul>
+		</div>
+		<!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container -->
+	</nav>
+
+	<!-- Page Content -->
+	<!--Nav Bar -->
+	<div class="row">
+	    <div class="col-xs-1 col-sm-1 hidden-md hidden-lg">
+	    </div>
+	    <!-- ONE COLUMN OF SPACE -->
+	    <nav class="hidden-xs hidden-sm col-md-2 col-lg-2 bs-docs-sidebar">
+		
+		<ul id="sidebar" class="nav nav-stacked fixed mansvFSI"> <!--Nav Bar -->
+		    <p><h3>Purkinje Network <br/> Tutorial</h3></p>
+		    <li><a href="#intro">Introduction</a></li>
+		    <li><a href="#install">Installing the Purkinje Plugin</a></li>
+		    <li><a href="#using">Using the Purkinje plugin</a></li>
+		    <!-- <li><a href="#appendix">Appendix: Building svFSI from source</a></li>
+			 <li><a href="#app_meshmixer">Appendix: Making wall mesh with <br> Meshmixer</a>
+			 <ul class="nav nav-stacked">
+			 <li><a href="#app_fluid_geometry">Creating the fluid geometry</a></li>
+			 <li><a href="#app_solid_geometry">Creating the solid geometry</a></li>
+			 <li><a href="#app_solid_mesh">Creating the solid mesh</a></li>
+			 <li><a href="#app_fluid_mesh">Creating the fluid mesh</a></li>
+			 </ul>
+			 </li>
+			 <li><a href="#app_restart_after_remesh">Appendix: Restart after remesh</a></li>
+			 <li><a href="#app_app_prescribed_wall_motion">Appendix: Prescribed wall motion</a></li>
+		    -->
+		</ul>
+
+	    </nav>
+
+	    <!--Main Content -->
+	    <div class="col-xs-10 col-sm-10 col-md-9 col-lg-9" id="manualContent">
+
+		<!-- ACTUAL CONTENT -->
+
+		<div class="mansvFSI">
+		    <section id="intro" class="group"><h2>Introduction</h2>
+
+		    <p> Heart needs to contract in a certain sequence to properly pump blood into circulation. This sequence coordinates the filling/emptying the chambers and openin/closing of the valves. The correct contraction sequence is achieved by a specialized fast conducting fiber network called Purkinje network that lies on the endocardium surfaces of heart. Accurately replicating the  contraction order  is important for an accurate cardiac-mechanics simulation. We model  Purkinje network in electrophysiology simulations in order to achieve a realistic activation pattern followed by a realistic mechanical contraction. </p>
+    
+		    <p>In Simvascular we use a network generation algorithm proposed in Sahli et al. (2016). The Purkinje Plugin is a custom SimVascular plugin that implements the network generation algorithm. This plugin  creates a Purkinje network on a surface model of the heart when loaded into SimVascular. It adds a Purkinje Network tool to the SimVascular menu bar.
+		    </p>
+
+		    <h4>Workflow</h4>
+		    <p> A geometric model of a heart is first created using SimVascular Paths, Segmentations and Models tools. The geometric model may also be imported using the Models tool. Model faces are extracted and assigned names and types (cap or wall) using the Models tool. The Meshes tool is then used to create a finite element tetrehedral mesh of the geometric model. The triangular surfaces of this mesh are identified with the model faces named in the Models tool.When the Purkinje Network tool is activated it displays the triangular surfaces of the mesh. A Purkinje network is created using the Purkinje Network tool using the following steps</p>
+		    <ol>
+			<li>Select a face on the mesh </li>
+			<li>Select the network starting point on the face </li>
+			<li>Set network generation parameters</li>
+			<li>Generate the network</li>
+			<li>Display the network</li>
+		    </ol>
+
+		    <h4>Parameters</h4>
+		    <p>The Purkinje network is generated using a Python script. The input to the script is a triangular surface, a network starting point, a second point defining the direction of the first network branch, and the parameters used to control the shape of the network.</p>
+		    <p>The parameters used to generated the network are</p>
+
+		    <ul>
+			<li>Starting point - Initial node of the network.</li>
+			<li>Second point - Defines the direction in which the network initial branch will grow.</li>
+			<li>Number of branch generations - The maximum number of network branches generated from the initial node.</li>
+			<li>Average branch length - Average length L of the branches. The length of each branch is calculted from a random normal distribution with mean L and variance 0.4*L^2.</li>
+			<li>Branch angle - Angle with respect to the direction of the previous branch and the new branch.</li>
+			<li>Repulsive parameter - Regulates the branch curvature: the larger the repulsion parameter, the more the branches repel each other.</li>
+			<li>Branch segment length - Approximate length of the segments that compose one branch (the length of a branch is random).</li>
+			<li>The parameter values set in the GUI can be saved to a text file by selecting the Export Paramters button. The GUI parameter values can be set from a file by selecting the Load Paramters button. Example parameter files can be found in the repository's example-projects/purkinje-network-ideal-heart/parameter-files directory.</li>
+		    </ul>
+	
+		    <h4>Output</h4>
+		    <p>The Purkinje Network tool writes files to the SimVascular project Purkinje-Network directory. The files are prefixed with a face name. The following files are created for each network.</p>
+		    <ul>
+			<li> <code> <font color="black"> FACENAME.vtp </font> </code> - Triangular surface the network is generated on. </li>
+			<li> <code> <font color="black">FACENAME.vtu          </font> </code> - Network geometry represented as polylines of n segments and n+1 nodes.</li>
+			<li> <code> <font color="black">FACENAME_endnodes.txt </font> </code> - Indices of nodes at the ends of network segments (i.e. not connected to other nodes).</li>
+			<li> <code> <font color="black">FACENAME_ien.txt      </font> </code> - Network connectivity as a list of node indices into FACENAME_xyz.txt.</li>
+			<li> <code> <font color="black">FACENAME_xyz.txt      </font> </code> - Network node coordinates.</li>
+		    </ul>
+
+		    <!--  -->
+
+		    <h4>Known Issues</h4>
+		    <ol>
+			<li>SimVascular does not record that the plugin was added to a project. Therefore the plugin must be added to the project each time a project is opened. The project **Purkinje-Network** directory is saved between project sessions.</li>
+			<li>If the Purkinje Network tool is added to a project before a mesh is loaded the tool does not know there is a mesh and will not work. </li>
+			<li>The Purkinje Network tool does not know when the mesh changes. If the mesh is changed then the project must be saved and then reopened.</li>
+			<li>There is no error reporting from the Python script. Users must check the console window for errors.</li>
+		    </ol>
+		    
+		    </section>
+		    
+		    <section id="install" class="group"><h2>Installing the Purkinje plugin</h2>
+			
+			<p> Installer for the plugin can be found on <a href="https://simtk.org/frs/?group_id=907">Simtk</a> website.
+			    The installer installs the Purkinje Plugin shared libraries, a setup.sh script and Python script in: <br/> </p>
+
+			<p><code> <font color="black"> /usr/local/sv/svplugins/SVDATE/Purkinje-Plugin/PLUGINDATE </font> </code></p>
+
+			<p?> The setup.sh script sets the SV_CUSTOM_PLUGINS and SV_PLUGIN_PATH environment variables. The SV_CUSTOM_PLUGINS environment variable defines the name of the pluging (org_sv_gui_qt_purkinjenetwork) and the SV_PLUGIN_PATH environment variable defines the locatation of the plugin shared library (e.g. liborg_sv_gui_qt_purkinjenetwork.so).</p>
+
+			<p>Note that SVDATE must match the date of the installed SimVascular application. To work around this restriction you can modify SVDATE to match the installed SimVascular application. This should work with the latest installed SimVascular application that uses the latest externals. To do this run the following on your shell:</p>
+
+			<p><code> <font color="black">cd /usr/local/sv/svplugins <br/> sudo mv PLUGINDATE/Purkinje-Plugin/ SVDATE/Purkinje-Plugin</font> </code></p>
+		    </section>
+		    
+		    
+		    <section id="using" class="group"><h2>Using the Purkinje plugin</h2>
+
+			<p>The SimVascular application starts by executing a launch script that looks for plugins in the plugin install directory. When a plugin is found its setup.sh script is executed. The SimVascular application is then executed and loads in core and then custom plugins. Plugins are loaded using the plugin shared library (e.g. liborg_sv_gui_qt_purkinjenetwork.so).</p>
+			<p>If the plugin is successfully loaded you will see the Purkinje Network tool icon on the SimVascular toolbar. When starting SimVascular a Purkinje Network tool panel may be present before a project is opened. Delete this tool before opening a project. Create a new project or open an existing one.
+			Import a .vtp suface file into the model definition if you don't have an existing one in your project. Run global reinit command.</p>
+
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/create-project.png">
+			    <figcaption class="svCaption" >Create a project or open an existing one.</figcaption>
+			</figure>
+
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/import-model.png">
+			    <figcaption class="svCaption" >Import .vtp surface file that you want to create a Purkinje network on.</figcaption>
+			</figure>
+
+			<p> Rename the surfaces in the imported solid model and select types from the drop down menu. Optionally assign colors to the surface
+			    to identify them easily.</p>
+
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/rename-surfaces.png">
+			    <figcaption class="svCaption" >Rename the surfaces and set types to wall/cap where appropriate.</figcaption>
+			</figure>
+			
+			<p> The Purkinje Network tool uses a mesh generated by a Meshes tool. A mesh must be present before adding the Purkinje Network tool. For this purpose create a new mesh under Meshes tab. In the opening SV Meshing window, enter global max edge size and run mesher. Meshing may take a couple of minutes. After meshing is complete, a pop-up window should appear giving information about mesh statistics. </p>
+
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/create-mesh.png">
+			    <figcaption class="svCaption" >Create a mesh under Meshes tab.</figcaption>
+			</figure>
+			
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/run-mesher.png">
+			    <figcaption class="svCaption" >Run mesher to generate a surface mesh.</figcaption>
+			</figure>
+
+			<p> Now select the Purkinje Network tool icon on the SimVascular toolbar. This brings up the Purkinje Network tool panel. The mesh read in to the Meshes/myocardium data node is displayed in the graphics window.</p>
+			
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/purkinje-tool.png">
+			    <figcaption class="svCaption" >Import Purkinje tool by clicking the Purkinje icon shown in the picture.</figcaption>
+			</figure>
+			
+			<p> A mesh face is selected by moving the mouse cursor over a face and pressing the s key. Select the  face that you want to generate the Purkinje network on. The face surface mesh is highlighed in yellow and its name is displayed in the Mesh Surface text box.</p>
+
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/select-surface.png">
+			    <figcaption class="svCaption" >Select the surface to generate the Purkinje network on.</figcaption>
+			</figure>
+
+			<p> Now select a starting point of the Purkinje network by moving the mouse cursor to a node on the face surface mesh and pressing Command+left-mouse-button. A red sphere marking the node selected and a red line showing the direction of the second point is displayed. Adjust the starting point and direction by repeating the selection. </p>
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/select-point.png">
+			    <figcaption class="svCaption" >Select the starting point and direction of the Purkinje network.</figcaption>
+			</figure>
+
+			<p> After adjusting the  parameters the Purkinje network is created by selecting the Create Network button. The network is displayed by selecting the Show Network checkbox. You can repeat selection of the initial point and create the network again until the results are satisfactory.</p>
+			<figure>
+			    <img class="svImg svImgMd" src="documentation/purkinje/imgs/create-network.png">
+			    <figcaption class="svCaption" >Create the Purkinje network after adjusting parameters.</figcaption>
+			</figure>
+
+			<p> You can navigate into the project directory and find the Purkinje network saved in .vtu format under the Purkinje-Network folder. Additionally you can find the .txt files that contain the information of endonodes, coordinates and connectivity under the same folder.  </p>
+			
+			<p>  <br/> <br/> <br/> <br/> <br/> </p>
+
+		    </section>
+		    
+		</div>
+		
+	    </div>
+	</div>
+
+
+	<!-- /.container -->
+	<nav class="navbar navbar-default navbar-fixed-bottom">
+            <div class="container-fluid text-center">
+		<ul class="nav navbar-nav">
+		    <li><a>Copyright &copy; SimVascular Development Team - 2017</a></li>
+		</ul>
+            </div>
+            <!-- /.container -->
+	</nav>
+
+
+	<script src="js/jquery-1.11.0.js" type="text/javascript"></script><script src="js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script type="text/x-mathjax-config">
+	 MathJax.Hub.Config({
+             tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+	 });
+	 $('body').scrollspy({
+             target: '.bs-docs-sidebar',
+             offset: 40
+	 });
+	</script>
+
+	<script>
+	 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	 ga('create', 'UA-55333921-1', 'auto');
+	 ga('send', 'pageview');
+	</script>
+
+	<script type="text/javascript"
+		src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+
+    </body>
+
+</html>
